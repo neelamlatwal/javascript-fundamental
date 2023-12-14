@@ -1,0 +1,246 @@
+// Determine if a given number is positive, negative, or zero.
+
+let number = -10;
+if (number > 0) {
+    console.log("Number is Poistive")
+}
+else if (number < 0) {
+    console.log("Number is Negative");
+}
+else if (number == 0) {
+    console.log("Number is Zero");
+}
+
+
+
+// - 0 to 12 years: "Child"
+// - 13 to 19 years: "Teenager"
+// - 20 to 64 years: "Adult"
+// - 65 and above: "Senior"
+// let age = 50;
+// if(age >= 0 && age <= 12){       
+//     console.log("Child")
+// }
+// else if(age >= 13 && age <=19){
+//     console.log("Teenager");
+// }
+// else if(age >= 20 && age <=64){
+//     console.log("Adult")
+// }
+// else if(age>=60){
+//     console.log("Senior");
+// }
+
+// The ticket price is determined according to the following criteria:
+
+// - For customers aged 0 to 5 (inclusive), the ticket is free.
+// - For customers aged 6 to 12 (inclusive), the ticket price is $8.
+// - For customers aged 13 to 18 (inclusive), the ticket price is $12.
+// - For customers aged 19 to 60 (inclusive), the ticket price is $15.
+// - For customers aged 61 and above, the ticket is free as a senior citizen discount.
+
+// If the provided age is negative or not a valid number, return "Invalid age."
+
+let age = -10;
+if (age < 0) {
+    console.log("Invalid age")
+}
+if (age >= 0 && age <= 5) {
+    console.log("the ticket is free")
+}
+else if (age >= 6 && age <= 12) {
+    console.log("the ticket is free")
+}
+else if (age >= 13 && age <= 18) {
+    console.log("he ticket price is $12")
+}
+else if (age >= 19 && age <= 60) {
+    console.log("he ticket price is $15")
+}
+else if (age >= 61) {
+    console.log("ticket is free as a senior citizen discount")
+}
+
+
+// switch Case
+
+// Assigning the day of the week based on a given number (1-7)
+
+let day = 3;
+switch (day) {
+    case 1:
+        console.log("Moday")
+        break;
+
+    case 2:
+        console.log("Tuesday")
+        break;
+
+    case 3:
+        console.log("Wednesday")
+        break;
+
+    case 4:
+        console.log("Thrusday")
+        break;
+
+    case 5:
+        console.log("Friday")
+        break;
+
+    case 6:
+        console.log("Saturday")
+        break;
+
+    case 6:
+        console.log("Sunday")
+        break;
+
+    default:
+        console.log("Invalid Number")
+}
+
+// Identifying the type of fruit based on a provided fruit name.
+
+let fruitName = "apple";
+switch (fruitName) {
+    case 'apple':
+        console.log("Fruit is Apple");
+        break;
+    case 'banana':
+        console.log('Fruit is  Banana');
+        break;
+    case 'orange':
+        console.log('Fruit is  Orange.');
+        break;
+    case 'grapes':
+        console.log('Fruit is  grapes');
+        break;
+    default:
+        console.log('Invalid Type')
+}
+
+const command = "lights on"
+switch (command) {
+    case "lights on":
+        console.log("Turning on lights");
+        break;
+    case 'lights off':
+        console.log("Turn off lights.");
+
+        break;
+    case 'tv on':
+        console.log("Turn on the TV.");
+
+        break;
+    case 'tv off':
+        console.log("Turn off the TV.");
+
+        break;
+    case 'music on':
+        console.log("Play music.");
+
+        break;
+    case 'music off':
+        console.log("Stop playing music.");
+
+        break;
+    default:
+        console.log("Unrecognized command");
+        break;
+}
+
+// If the person is both a citizen and aged 18 or older, return "Eligible to vote." If the person is not a citizen, return "Not a citizen. Cannot vote." If the person is a citizen but below 18 years old, return "Citizen, but not old enough to vote." For any other cases or invalid inputs, return "Invalid input."
+
+// Categorize a person's BMI (Body Mass Index) as "Underweight," "Normal weight," "Overweight," or "Obese."
+
+if (citizen = true && age < 18) {
+    console.log("Eligible to vote.");
+}
+else {
+    console.log("Not a Citizien ")
+}
+
+const bmi = 20;
+if (bmi < 18.5) {
+    console.log("Underweight");
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+    console.log("Normal weight");
+} else if (bmi >= 25 && bmi <= 29.9) {
+    console.log("Overweight");
+} else if (bmi >= 30) {
+    console.log("Obese");
+} else {
+    console.log("Invalid BMI");
+}
+
+
+
+//   Ternary Operators
+
+
+// 1.Check if a given number is even or odd.
+
+let checkNumber = 4;
+console.log(checkNumber % 2 == 0 ? "Even" : "Odd");
+
+// Determine whether a person is eligible for a discount based on their membership status.
+// Implement the following condition using a ternary operator:
+
+// If the person is a member, return "Eligible for a discount."
+// If the person is not a member, return "Not eligible for a discount."
+
+let memebership = true;
+
+console.log(memebership ? "Eligible for a discount" : "Not eligible for a discount.")
+
+// 5. while and do while Loops
+// Write programs utilizing while and do while loops to:
+
+// Display numbers from 1 to 10 in reverse order.
+// do while loop to calculate the sum of numbers from 1 to a given positive integer limit. console the total sum of numbers. 
+// For example if limit value is 10 then the output should be Expected 55. like (1 + 2 + 3 + ... + 10 = 55)
+
+let loop = 10;
+
+while (loop >= 0) {
+    console.log(loop);
+    loop--;
+
+
+}
+
+
+let sum = 0;
+let i;
+do {
+    sum = sum + i;
+    console.log(sum);
+    i++;
+} while (i <= 10)
+
+
+
+// for Loop, break, and continue Statements
+
+// Find prime numbers within a specified range.
+// let primenumber=[1, 2, 3, 4,5 , 6, 7, 8, 9];
+// for(i=0; i<10;i++){
+//    if(primenumber% i == 0)
+
+// }
+
+
+
+// Display the multiplication table of a given number, skipping multiplication by 3.
+
+// print 2 table
+let multiplicationNumber = 5;
+for (i = 1; i <= 10; i++) {
+    if (i == 3) {
+        continue
+    }
+    const result = multiplicationNumber * i;
+    console.log(`${multiplicationNumber} * ${i} = ${result}`);
+
+}
