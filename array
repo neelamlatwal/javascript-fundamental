@@ -1,1 +1,66 @@
 
+
+const shoppingList = [
+    "Basmati Rice",
+    "Masoor Dal",
+    "Paneer",
+    "Turmeric Powder",
+    "Ghee",
+    "Mangoes",
+    "Assam Tea",
+    "Papadums",
+    "Jaggery"
+]
+console.log(shoppingList.push("Sugar"));
+console.log(shoppingList.pop());
+console.log(shoppingList.unshift("Chilli Powder"));
+console.log(shoppingList.shift());
+// splice  - delete , add , replace element
+console.log(shoppingList.splice(2, 1)); //first arguments is position , second is number of element to be deleted
+console.log(shoppingList.splice(3, 0, "Oil")); //add element
+console.log(shoppingList.splice(2, 1, "Panner")); // replace element
+const newArray = shoppingList.slice(2, 4); // 
+console.log('newArray: ', newArray);
+console.log('shoppingList: ', shoppingList);//Copy a portion of an array
+
+
+
+// Create an array musicPlaylist containing strings representing song titles.
+
+const musicPlaylist = ["Chaiyya Chaiyya - Dil Se",
+    "Maa Tujhe Salaam - A.R. Rahman",
+    "Kabira - Yeh Jawaani Hai Deewani",
+    "Kal Ho Naa Ho - Kal Ho Naa Ho",
+    "Mile Sur Mera Tumhara - Doordarshan"]
+
+    // Use loops to display the contents of musicPlaylist
+    for (let i =0 ;i<musicPlaylist.length; i++){
+        console.log(musicPlaylist[i]);
+    }
+    // Implement slice to create a smaller playlist based on specific criteria (e.g., top 5 songs).
+    console.log(musicPlaylist.slice(0,4));
+
+    // Create an array bookInventory containing nested arrays representing book details like title, author, and quantity.
+    const bookInventory = [
+        ["The God of Small Things", "Arundhati Roy", 10],
+        ["Train to Pakistan", "Khushwant Singh", 15],
+        ["The White Tiger", "Aravind Adiga", 8],
+        ["The Immortals of Meluha", "Amish Tripathi", 20],
+        ["Midnight's Children", "Salman Rushdie", 12]
+    ];
+
+    // Update Inventory:
+
+    // Implement functionality to add new books using concat.
+    
+
+    const newBooks = [["Book Title 1", "Author 1", 10],
+    ["Book Title 2", "Author 2", 15],
+    ["Book Title 3", "Author 3", 20],]
+    const concatBooks= bookInventory.concat(newBooks);
+    console.log('concatBooks: ', concatBooks);
+
+    // Use splice to update book details (change quantity or remove books).
+    console.log(bookInventory.splice(1,1,["Book Title 2", "Author 2", 15]));
+    // console.log(bookInventory.splice(1,1,["Train to Pakistan", "Khushwant Singh", 15]));
+    console.log('bookInventory: ', bookInventory);
